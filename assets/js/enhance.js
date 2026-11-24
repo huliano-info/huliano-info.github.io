@@ -3,11 +3,20 @@
   "use strict";
 
   var PACKAGES = {
-    "100": { paid: 100, bonus: 0, total: 100, days: 14, month: 210, day: "7,00" },
-    "300": { paid: 300, bonus: 30, total: 330, days: 47, month: 191, day: "6,36" },
-    "500": { paid: 500, bonus: 100, total: 600, days: 85, month: 175, day: "5,83" },
-    "900": { paid: 900, bonus: 300, total: 1200, days: 171, month: 158, day: "5,25" }
+    "100": { paid: 100, bonus: 0, total: 100, days: 14, month: 210, monthExact: 210, day: "7,00" },
+    "300": { paid: 300, bonus: 30, total: 330, days: 47, month: 191, monthExact: 300 / 330 * 210, day: "6,36" },
+    "500": { paid: 500, bonus: 100, total: 600, days: 85, month: 175, monthExact: 175, day: "5,83" },
+    "900": { paid: 900, bonus: 300, total: 1200, days: 171, month: 158, monthExact: 157.5, day: "5,25" }
   };
+
+  function pluralRu(n, one, few, many) {
+    var mod100 = Math.abs(n) % 100;
+    var mod10 = mod100 % 10;
+    if (mod100 > 10 && mod100 < 20) return many;
+    if (mod10 === 1) return one;
+    if (mod10 >= 2 && mod10 <= 4) return few;
+    return many;
+  }
 
   function formatNum(num) {
     return String(num).replace(/\B(?=(\d{3})+(?!\d))/g, "\u00a0");
@@ -44,10 +53,7 @@
 
     function render() {
       var p = PACKAGES[state.pkg] || PACKAGES["900"];
-      var perDevice = p.month / state.devices;
-      if (state.pkg === "900" && state.devices === 5) {
-        perDevice = 31.5;
-      }
+      var perDevice = state.devices === 1 ? p.month : p.monthExact / state.devices;
 
       if (outTotal) outTotal.textContent = formatNum(p.total) + "\u00a0₽";
       if (outDays) outDays.textContent = p.days + "\u00a0дн.";
@@ -55,11 +61,12 @@
       if (outPerDevice) outPerDevice.textContent = formatRubDecimal(perDevice);
       if (outSummary) {
         var bonusText = p.bonus > 0 ? " (+бонус " + p.bonus + "\u00a0₽)" : " (без бонуса)";
+        var daysWord = pluralRu(p.days, "день", "дня", "дней");
+        var devWord = pluralRu(state.devices, "устройство", "устройства", "устройств");
         outSummary.textContent =
           "Пакет " + p.paid + "\u00a0₽" + bonusText +
-          " зачисляет " + formatNum(p.total) + "\u00a0₽ на баланс — это " + p.days + " дней доступа (" +
-          p.day + "\u00a0₽/день). На " + state.devices +
-          (state.devices === 1 ? " устройство" : " устройств") +
+          " зачисляет " + formatNum(p.total) + "\u00a0₽ на баланс — это " + p.days + " " + daysWord + " доступа (" +
+          p.day + "\u00a0₽/день). На " + state.devices + " " + devWord +
           " выходит " + formatRubDecimal(perDevice) + " за слот в месяц.";
       }
 
