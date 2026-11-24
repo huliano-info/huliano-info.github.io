@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конфиденциальность Huliano VPN — No-Logs и защита данных</title>
+  <meta name="description" content="Политика No-Logs Huliano VPN: без журналов сайтов, DNS и истории трафика, без хранения банковских карт и автосписаний. Связь по вопросам: info@huliano.org.">
+  <meta name="theme-color" content="#FFCC00">
+  <link rel="canonical" href="https://huliano.org/privacy/">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preload" href="../assets/fonts/sofia-800-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/onest-400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/onest-700-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Huliano VPN">
+  <meta property="og:title" content="Конфиденциальность Huliano VPN — No-Logs и защита данных">
+  <meta property="og:description" content="Huliano VPN работает по принципу No-Logs: никаких журналов посещений, DNS-запросов и привязанных карт. Контакт: info@huliano.org.">
+  <meta property="og:url" content="https://huliano.org/privacy/">
+  <meta property="og:image" content="https://huliano.org/assets/img/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://huliano.org/#organization",
+        "name": "Huliano VPN",
+        "url": "https://huliano.org/",
+        "logo": "https://huliano.org/assets/img/icon-192.png",
+        "email": "info@huliano.org"
+      },
+      {
+        "@type": "Article",
+        "@id": "https://huliano.org/privacy/#article",
+        "headline": "Политика No-Logs и конфиденциальность Huliano VPN",
+        "url": "https://huliano.org/privacy/",
+        "inLanguage": "ru-RU",
+        "datePublished": "2026-11-24",
+        "dateModified": "2026-11-24",
+        "author": { "@id": "https://huliano.org/#organization" },
+        "publisher": { "@id": "https://huliano.org/#organization" },
+        "description": "Политика No-Logs сервиса Huliano VPN (@HulianoBot): отсутствие журналов посещённых сайтов, DNS-запросов и трафика, шифрование VLESS/Xray, отсутствие хранения банковских карт и связь через info@huliano.org."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://huliano.org/privacy/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Главная",
+            "item": "https://huliano.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Приватность No-Logs",
+            "item": "https://huliano.org/privacy/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="/" aria-label="Huliano VPN — на главную">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="34" height="34">
+            <path d="M 27.6 28.8 C 26.2 21.8, 30.8 17.4, 38.4 17.8 C 44.8 18.1, 49.0 16.5, 49.8 13.0 C 50.5 9.8, 48.0 7.7, 44.6 6.8 C 53.6 6.5, 59.8 14.0, 58.2 23.8 C 56.6 33.4, 46.8 40.2, 34.2 35.4 C 39.0 48.0, 32.2 57.8, 22.6 59.4 C 12.8 61.0, 5.3 54.8, 5.6 45.8 C 6.5 49.2, 8.6 51.7, 11.8 51.0 C 15.3 50.2, 16.9 46.0, 16.6 39.6 C 16.2 32.0, 20.6 27.4, 27.6 28.8 Z" fill="#FFCC00"/>
+          </svg>
+        </span>
+        <span class="brand-name">Huliano VPN</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Основная навигация">
+        <a class="nav-link" href="/">Главная</a>
+        <a class="nav-link" href="/pricing/">Тарифы</a>
+        <a class="nav-link" href="/setup/">Подключение</a>
+        <a class="nav-link" href="/privacy/" aria-current="page">No-Logs</a>
+        <a class="nav-link" href="/faq/">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="hu-btn hu-btn--red hu-btn--sm" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer"><span class="hide-xs">Открыть </span>@HulianoBot</a>
+        <details class="nav-mobile">
+          <summary aria-label="Открыть меню навигации">Меню</summary>
+          <nav class="nav-mobile-panel" aria-label="Мобильная навигация">
+            <a class="nav-link" href="/">Главная</a>
+            <a class="nav-link" href="/pricing/">Тарифы и калькулятор</a>
+            <a class="nav-link" href="/setup/">Приложения и подключение</a>
+            <a class="nav-link" href="/privacy/" aria-current="page">Приватность No-Logs</a>
+            <a class="nav-link" href="/faq/">Частые вопросы</a>
+            <a class="hu-btn hu-btn--red hu-btn--sm" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Перейти в @HulianoBot</a>
+          </nav>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-sub hero-sub--paper" aria-labelledby="privacy-h1">
+      <div class="container">
+        <div class="breadcrumb-row">
+          <nav aria-label="Хлебные крошки">
+            <ol class="breadcrumbs">
+              <li><a href="/">Главная</a> /</li>
+              <li aria-current="page"><strong>Приватность и No-Logs</strong></li>
+            </ol>
+          </nav>
+          <span class="sticker sticker--green">Политика No-Logs • 0 трекеров</span>
+        </div>
+
+        <div class="hero-grid hero-grid--sub">
+          <div>
+            <h1 id="privacy-h1" class="h1-sub">Ваши сайты и трафик — только ваше дело</h1>
+            <p class="hero-copy">
+              <strong>Huliano VPN</strong> (<a href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">@HulianoBot</a>) работает по строгому принципу <strong>No-Logs</strong>: серверы на базе <strong>VLESS/Xray</strong> не записывают историю посещённых сайтов, DNS-запросы, содержимое переписок и журналы подключений. Мы храним только необходимый минимум для работы вашего баланса 7 ₽/сутки и лимита до 5 устройств — и ничего лишнего.
+            </p>
+            <div class="cta-row">
+              <a class="hu-btn hu-btn--dark" href="mailto:info@huliano.org">Почта: info@huliano.org</a>
+              <a class="hu-btn hu-btn--blue" href="https://t.me/HulianoSupportBot" target="_blank" rel="noopener noreferrer">Поддержка @HulianoSupportBot</a>
+            </div>
+          </div>
+
+          <div class="hero-showcase">
+            <figure class="mascot-frame mascot-frame--cream" style="margin:0;">
+              <img src="../assets/img/mascot-privacy.jpg" alt="Маскот Huliano VPN с синим щитом и золотым замком — политика No-Logs" width="960" height="716" fetchpriority="high">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="manifesto-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Просто и по делу</span>
+          <h2 id="manifesto-heading">Что мы НЕ храним — и что нужно для работы баланса</h2>
+          <p class="section-lead">
+            Никакого мелкого шрифта и запутанного юридического канцелярита. Сетевой туннель Huliano VPN полностью отделён от биллинга в Telegram Mini App.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="bento-card bento-card--dark span-6">
+            <div>
+              <span class="chip chip--yellow" style="margin-bottom:14px;">0 байт • строго No-Logs</span>
+              <h3 style="margin-bottom:14px;">Никогда не записываем и не храним</h3>
+              <ul class="check-list check-list--cross">
+                <li>Историю посещённых сайтов, доменов и открытых ссылок.</li>
+                <li>Журналы DNS-запросов и сетевой активности.</li>
+                <li>Содержимое вашего трафика, сообщения, файлы и данные приложений.</li>
+                <li>Связки «исходный IP пользователя → целевой ресурс и время».</li>
+                <li>Номера банковских карт и токены для скрытых автосписаний.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="bento-card bento-card--white span-6">
+            <div>
+              <span class="chip chip--green" style="margin-bottom:14px;">Только для работы аккаунта</span>
+              <h3 style="margin-bottom:14px;">Технический минимум в @HulianoBot</h3>
+              <ul class="check-list">
+                <li>Идентификатор Telegram (<code>telegram_id</code>), чтобы сохранять ваш баланс и ключ.</li>
+                <li>Остаток предоплаченного баланса и дату ежедневного списания 7 ₽/сутки.</li>
+                <li>Оперативный счётчик активных слотов (в пределах <strong>до 5 устройств</strong> на ключ).</li>
+                <li>Факт и сумму пополнения от платёжного шлюза (для зачисления бонуса и партнёрки 50%).</li>
+                <li>E-mail, только если вы сами привязали его в профиле или написали на <code>info@huliano.org</code>.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper" aria-labelledby="pillars-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow eyebrow--blue">4 принципа безопасности</span>
+          <h2 id="pillars-heading">Как защищены ваше соединение и оплаты</h2>
+          <p class="section-lead">
+            Huliano VPN сочетает современное шифрование VLESS/Xray, локальную DIRECT-маршрутизацию банков и предоплаченную оплату без привязки карт.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="bento-card bento-card--white">
+            <h3>Современное шифрование VLESS / Xray</h3>
+            <p>Трафик между вашим устройством и серверами шифруется современным протоколом VLESS/Xray под управлением панели Remnawave. Содержимое соединения закрыто от стороннего перехвата в публичных Wi-Fi и мобильных сетях.</p>
+          </article>
+
+          <article class="bento-card bento-card--white">
+            <h3>Банки РФ идут напрямую (DIRECT)</h3>
+            <p>Запросы к Сберу, Т-Банку, ВТБ, СБП и Госуслугам маршрутизируются напрямую с вашего устройства и не проходят через зарубежные узлы — банковский трафик остаётся максимально коротким и предсказуемым.</p>
+          </article>
+
+          <article class="bento-card bento-card--yellow">
+            <h3>Оплата без сохранения банковских карт</h3>
+            <p>Пополнение через СБП, карты РФ (МИР), криптовалюту (USDT) и Telegram Stars проходит без сохранения реквизитов карты и без автоматических списаний — баланс пополняется только по вашему решению.</p>
+          </article>
+
+          <article class="bento-card bento-card--white">
+            <h3>Быстрое удаление аккаунта и прямая связь</h3>
+            <p>Вы можете в любой момент запросить удаление данных учётной записи или задать любой вопрос о приватности на <a href="mailto:info@huliano.org"><strong>info@huliano.org</strong></a> или в Telegram-поддержку <a href="https://t.me/HulianoSupportBot" target="_blank" rel="noopener noreferrer"><strong>@HulianoSupportBot</strong></a>. Сайт <code>huliano.org</code> также не использует рекламные трекеры и сторонние cookies.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-panel">
+          <div class="cta-panel__text">
+            <h2>Приватный интернет без лишних данных и автосписаний</h2>
+            <p style="margin-bottom:0;">Для старта достаточно Telegram: откройте <strong>@HulianoBot</strong>, получите <strong>50 ₽ (7 дней)</strong> или <strong>100 ₽ (14 дней)</strong> по промокоду и подключите до 5 устройств за минуту.</p>
+          </div>
+          <div class="cta-row">
+            <a class="hu-btn hu-btn--red hu-btn--lg" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Открыть @HulianoBot →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Huliano VPN</h3>
+          <p>Быстрый VPN в Telegram Mini App (<strong>@HulianoBot</strong>) на базе VLESS/Xray. Предоплаченный баланс 7 ₽/сутки без автосписаний, до 5 устройств, автовыбор стран с резервом, DIRECT для банков РФ и Госуслуг, поддержка режима «белых списков» и клиентов Happ, INCY, Karing, OneXray, V2RayTun, Hiddify, Streisand, v2rayNG, NekoBox / Nekoray и Clash Verge.</p>
+        </div>
+        <div>
+          <h3>Навигация</h3>
+          <ul class="footer-links">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/pricing/">Тарифы и калькулятор</a></li>
+            <li><a href="/setup/">Подключение и клиенты</a></li>
+            <li><a href="/privacy/">Приватность No-Logs</a></li>
+            <li><a href="/faq/">Частые вопросы (FAQ)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Контакты</h3>
+          <ul class="footer-links">
+            <li><a href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Бот и Mini App: @HulianoBot</a></li>
+            <li><a href="https://t.me/HulianoSupportBot" target="_blank" rel="noopener noreferrer">Поддержка: @HulianoSupportBot</a></li>
+            <li><a href="https://t.me/HulianoVPN" target="_blank" rel="noopener noreferrer">Канал новостей: @HulianoVPN</a></li>
+            <li><a href="mailto:info@huliano.org">Почта: info@huliano.org</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Справка для систем</h3>
+          <ul class="footer-links">
+            <li><a href="/llms.txt">llms.txt</a></li>
+            <li><a href="/sitemap.xml">sitemap.xml</a></li>
+            <li><a href="/robots.txt">robots.txt</a></li>
+          </ul>
+          <p style="margin-top:12px;">Обновлено:<br><time datetime="2026-11-24">24 ноября 2026 г.</time></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Huliano VPN • https://huliano.org/</span>
+        <span>Политика No-Logs • 0 автосписаний</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/enhance.js" defer></script>
+</body>
+</html>

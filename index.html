@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huliano VPN — 7 ₽/сутки, 5 устройств, Happ и банки РФ</title>
+  <meta name="description" content="Huliano VPN (@HulianoBot): VLESS/Xray в Happ, INCY и 8 клиентах, 7 ₽/сутки без автосписаний, 5 устройств, автовыбор стран, DIRECT для банков и белые списки.">
+  <meta name="theme-color" content="#FFCC00">
+  <link rel="canonical" href="https://huliano.org/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/sofia-800-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/onest-400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/onest-700-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Huliano VPN">
+  <meta property="og:title" content="Huliano VPN — 7 ₽/сутки, 5 устройств, Happ и банки РФ">
+  <meta property="og:description" content="Честный баланс 7 ₽/сутки без автосписаний, до 5 устройств, автовыбор и автопереключение стран, DIRECT для банков РФ, режим белых списков и полная поддержка Happ + VLESS/Xray.">
+  <meta property="og:url" content="https://huliano.org/">
+  <meta property="og:image" content="https://huliano.org/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://huliano.org/#organization",
+        "name": "Huliano VPN",
+        "url": "https://huliano.org/",
+        "logo": "https://huliano.org/assets/img/icon-192.png",
+        "email": "info@huliano.org",
+        "sameAs": [
+          "https://t.me/HulianoBot",
+          "https://t.me/HulianoVPN",
+          "https://t.me/HulianoSupportBot"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "url": "https://t.me/HulianoSupportBot",
+            "email": "info@huliano.org",
+            "availableLanguage": ["ru"]
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://huliano.org/#website",
+        "url": "https://huliano.org/",
+        "name": "Huliano VPN",
+        "inLanguage": "ru-RU",
+        "publisher": { "@id": "https://huliano.org/#organization" },
+        "datePublished": "2026-11-24",
+        "dateModified": "2026-11-24"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://huliano.org/#software",
+        "name": "Huliano VPN",
+        "alternateName": "@HulianoBot",
+        "applicationCategory": "SecurityApplication",
+        "applicationSubCategory": "VPN",
+        "operatingSystem": "iOS, Android, Windows, macOS, Linux, Telegram Mini App",
+        "url": "https://huliano.org/",
+        "downloadUrl": "https://t.me/HulianoBot",
+        "inLanguage": "ru-RU",
+        "datePublished": "2026-11-24",
+        "dateModified": "2026-11-24",
+        "publisher": { "@id": "https://huliano.org/#organization" },
+        "image": "https://huliano.org/assets/img/og-image.png",
+        "paymentAccepted": "СБП, банковские карты РФ (МИР), криптовалюта (USDT), Telegram Stars",
+        "description": "Huliano VPN (@HulianoBot) — быстрый VPN-сервис в Telegram Mini App на протоколе VLESS/Xray. Честный предоплаченный баланс 7 ₽/сутки без автосписаний (158–210 ₽/мес на пакетах 100–900 ₽), до 5 устройств (от 31,5 ₽/устройство), автовыбор и автопереключение стран, встроенная DIRECT-маршрутизация для российских банков (Сбер, Т-Банк, ВТБ, СБП) и Госуслуг, поддержка режима белых списков, оплата СБП, картами РФ (МИР), криптовалютой (USDT) и Telegram Stars, совместимость с Happ, INCY, Karing, OneXray, V2RayTun, Hiddify, Streisand, v2rayNG, NekoBox / Nekoray и Clash Verge.",
+        "featureList": [
+          "Пул быстрых зарубежных стран, автоматический выбор оптимального сервера и автопереключение на рабочий узел",
+          "Умная DIRECT-маршрутизация: российские сайты, Сбер, Т-Банк, ВТБ, СБП и Госуслуги работают напрямую без отключения VPN",
+          "Поддержка режима белых списков и устойчивая работа при жёстких сетевых ограничениях",
+          "Основное приложение Happ + полная поддержка VLESS/Xray в INCY, Karing, OneXray, V2RayTun, Hiddify, Streisand, v2rayNG, NekoBox / Nekoray и Clash Verge",
+          "Предоплаченный баланс 7 ₽/сутки без автосписаний, списание только после первого подключения",
+          "До 5 устройств на один баланс (от 31,5 ₽/устройство в месяц)",
+          "Стартовый баланс 50 ₽ (7 дней) и 100 ₽ (14 дней) по приглашению или промокоду",
+          "Оплата через СБП, банковские карты РФ (МИР), криптовалюту (USDT) и Telegram Stars, политика No-Logs и партнёрская программа 50% пожизненно"
+        ],
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "RUB",
+          "lowPrice": "100",
+          "highPrice": "900",
+          "offerCount": "4",
+          "url": "https://huliano.org/pricing/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://huliano.org/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Huliano VPN",
+            "item": "https://huliano.org/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="/" aria-label="Huliano VPN — на главную">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="34" height="34">
+            <path d="M 27.6 28.8 C 26.2 21.8, 30.8 17.4, 38.4 17.8 C 44.8 18.1, 49.0 16.5, 49.8 13.0 C 50.5 9.8, 48.0 7.7, 44.6 6.8 C 53.6 6.5, 59.8 14.0, 58.2 23.8 C 56.6 33.4, 46.8 40.2, 34.2 35.4 C 39.0 48.0, 32.2 57.8, 22.6 59.4 C 12.8 61.0, 5.3 54.8, 5.6 45.8 C 6.5 49.2, 8.6 51.7, 11.8 51.0 C 15.3 50.2, 16.9 46.0, 16.6 39.6 C 16.2 32.0, 20.6 27.4, 27.6 28.8 Z" fill="#FFCC00"/>
+          </svg>
+        </span>
+        <span class="brand-name">Huliano VPN</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Основная навигация">
+        <a class="nav-link" href="/" aria-current="page">Главная</a>
+        <a class="nav-link" href="/pricing/">Тарифы</a>
+        <a class="nav-link" href="/setup/">Подключение</a>
+        <a class="nav-link" href="/privacy/">No-Logs</a>
+        <a class="nav-link" href="/faq/">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="hu-btn hu-btn--red hu-btn--sm" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer"><span class="hide-xs">Открыть </span>@HulianoBot</a>
+        <details class="nav-mobile">
+          <summary aria-label="Открыть меню навигации">Меню</summary>
+          <nav class="nav-mobile-panel" aria-label="Мобильная навигация">
+            <a class="nav-link" href="/" aria-current="page">Главная</a>
+            <a class="nav-link" href="/pricing/">Тарифы и калькулятор</a>
+            <a class="nav-link" href="/setup/">Приложения и подключение</a>
+            <a class="nav-link" href="/privacy/">Приватность No-Logs</a>
+            <a class="nav-link" href="/faq/">Частые вопросы</a>
+            <a class="hu-btn hu-btn--red hu-btn--sm" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Перейти в @HulianoBot</a>
+          </nav>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-flagship" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="sticker-row">
+              <span class="sticker sticker--dark"><span class="status-dot" aria-hidden="true"></span>Telegram Mini App • @HulianoBot</span>
+              <span class="sticker sticker--tilt-l">0 автосписаний</span>
+              <span class="sticker sticker--blue sticker--tilt-r">от 31,5 ₽ / устройство</span>
+            </div>
+
+            <h1 id="hero-title">Huliano VPN — <span class="nowrap">7&nbsp;₽/сутки,</span> 5&nbsp;устройств и&nbsp;умный авторежим</h1>
+
+            <p class="hero-copy">
+              <strong>Huliano VPN</strong> (<a href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">@HulianoBot</a>) — быстрый VPN в Telegram Mini App на <strong>VLESS/Xray</strong> с основным приложением <strong>Happ</strong> и 9 популярными Xray-клиентами (INCY, Karing, V2RayTun и др.). Умный авторежим сам выбирает лучшую страну и переключает сервер при сбое, банки РФ (Сбер, Т-Банк, ВТБ, СБП) и Госуслуги идут напрямую, а <strong>режим «белых списков»</strong> держит связь в сложных сетях.
+            </p>
+
+            <div class="cta-row">
+              <a class="hu-btn hu-btn--red hu-btn--lg" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Запустить @HulianoBot</a>
+              <a class="hu-btn hu-btn--paper hu-btn--lg" href="/pricing/">Тарифы от 158 ₽/мес</a>
+            </div>
+
+            <div class="hero-proof" aria-label="Ключевые условия старта">
+              <span>✦ 50 ₽ сразу (7 дн.) • 100 ₽ по промокоду (14 дн.)</span>
+              <span>✦ Списание только после 1-го подключения</span>
+              <span>✦ СБП • Карты РФ • Крипта (USDT) • Telegram Stars</span>
+            </div>
+          </div>
+
+          <div class="hero-showcase">
+            <figure class="mascot-frame" style="margin:0;">
+              <img src="assets/img/mascot-hero.jpg" alt="Маскот Huliano VPN — джентльмен в цилиндре и красном пиджаке показывает знак ОК" width="960" height="716" fetchpriority="high">
+            </figure>
+
+            <div class="miniapp-card" aria-label="Сводка баланса в Mini App Huliano VPN">
+              <span class="miniapp-status"><span class="status-dot" aria-hidden="true"></span>работает • автовыбор страны</span>
+              <div class="miniapp-card__top">
+                <div>
+                  <div class="miniapp-card__big">7 ₽ / СУТКИ</div>
+                  <div class="miniapp-card__sub">158–210 ₽/мес • 0 автосписаний</div>
+                </div>
+                <a class="hu-btn hu-btn--blue hu-btn--sm" href="/setup/">Настроить →</a>
+              </div>
+              <div class="miniapp-card__pills">
+                <div class="miniapp-pill">
+                  Устройства
+                  <strong>До 5 на 1 баланс</strong>
+                </div>
+                <div class="miniapp-pill">
+                  Маршрут
+                  <strong>DIRECT + Белые списки</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-band" role="region" aria-label="Главные преимущества Huliano VPN">
+      <div class="marquee-track">
+        <ul class="marquee-list">
+          <li>7 ₽ В СУТКИ <span class="marquee-star" aria-hidden="true">★</span></li>
+          <li>ДО 5 УСТРОЙСТВ НА 1 БАЛАНС <span class="marquee-star" aria-hidden="true">★</span></li>
+          <li>0 АВТОСПИСАНИЙ <span class="marquee-star" aria-hidden="true">★</span></li>
+          <li>DIRECT ДЛЯ БАНКОВ РФ И ГОСУСЛУГ <span class="marquee-star" aria-hidden="true">★</span></li>
+          <li>АВТОВЫБОР И АВТОПЕРЕКЛЮЧЕНИЕ СТРАН <span class="marquee-star" aria-hidden="true">★</span></li>
+          <li>ПОДДЕРЖКА БЕЛЫХ СПИСКОВ <span class="marquee-star" aria-hidden="true">★</span></li>
+          <li>HAPP + 9 XRAY-КЛИЕНТОВ <span class="marquee-star" aria-hidden="true">★</span></li>
+          <li>ПАРТНЁРКА 50% ПОЖИЗНЕННО <span class="marquee-star" aria-hidden="true">★</span></li>
+        </ul>
+        <ul class="marquee-list" aria-hidden="true">
+          <li>7 ₽ В СУТКИ <span class="marquee-star">★</span></li>
+          <li>ДО 5 УСТРОЙСТВ НА 1 БАЛАНС <span class="marquee-star">★</span></li>
+          <li>0 АВТОСПИСАНИЙ <span class="marquee-star">★</span></li>
+          <li>DIRECT ДЛЯ БАНКОВ РФ И ГОСУСЛУГ <span class="marquee-star">★</span></li>
+          <li>АВТОВЫБОР И АВТОПЕРЕКЛЮЧЕНИЕ СТРАН <span class="marquee-star">★</span></li>
+          <li>ПОДДЕРЖКА БЕЛЫХ СПИСКОВ <span class="marquee-star">★</span></li>
+          <li>HAPP + 9 XRAY-КЛИЕНТОВ <span class="marquee-star">★</span></li>
+          <li>ПАРТНЁРКА 50% ПОЖИЗНЕННО <span class="marquee-star">★</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Почему Huliano VPN</span>
+          <h2 id="features-heading">Один раз включил — и забыл про ручные переключения</h2>
+          <p class="section-lead">
+            Huliano VPN сочетает удобный Telegram Mini App <strong>@HulianoBot</strong>, быстрый пул зарубежных стран с автопереключением, встроенный DIRECT для российских сервисов и честную оплату по дням без скрытых подписок.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="bento-card bento-card--yellow span-7">
+            <div class="bento-top">
+              <div>
+                <span class="chip chip--dark" style="margin-bottom:10px;">Умный авторежим</span>
+                <h3>Разные страны, автовыбор и мгновенный резерв</h3>
+              </div>
+              <div class="bento-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+            </div>
+            <p>В подписке Huliano VPN доступен пул быстрых зарубежных локаций. Умный авторежим сам подбирает оптимальный сервер по скорости и отклику, а если текущий узел перестал отвечать — соединение автоматически переключается на другой рабочий сервер без обрыва ваших задач.</p>
+            <div class="chip-row">
+              <span class="chip">Автовыбор локации</span>
+              <span class="chip">Автопереключение при сбое</span>
+              <span class="chip">VLESS / Xray • Remnawave</span>
+            </div>
+          </article>
+
+          <article class="bento-card bento-card--blue span-5">
+            <div class="bento-top">
+              <div class="bento-num">от 31,5 ₽</div>
+              <div class="bento-icon bento-icon--yellow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#1F1A18" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+              </div>
+            </div>
+            <div>
+              <h3>До 5 устройств на один баланс</h3>
+              <p>Подключите телефон, ноутбук, планшет и устройства близких к одному ключу без доплаты за слоты. На пакете 900 ₽ (158 ₽/мес) выходит всего <strong>31,5 ₽ за устройство в месяц</strong>.</p>
+            </div>
+            <div class="chip-row">
+              <span class="chip">iPhone</span>
+              <span class="chip">Android</span>
+              <span class="chip">Ноутбук</span>
+              <span class="chip">Планшет</span>
+              <span class="chip chip--yellow">+ ещё 1 слот</span>
+            </div>
+          </article>
+
+          <article class="bento-card bento-card--dark span-5">
+            <div class="bento-top">
+              <div>
+                <span class="chip chip--yellow" style="margin-bottom:10px;">Сложные сети</span>
+                <h3>Поддержка режима «белых списков»</h3>
+              </div>
+              <div class="bento-icon bento-icon--yellow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#1F1A18" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+            </div>
+            <p>Huliano VPN поддерживает работу в режиме <strong>«белых списков»</strong> и сохраняет устойчивое зашифрованное соединение даже при жёстких сетевых ограничениях на мобильной связи и домашнем интернете.</p>
+          </article>
+
+          <article class="bento-card bento-card--white span-7">
+            <div class="bento-top">
+              <div>
+                <span class="chip chip--green" style="margin-bottom:10px;">Честный предоплаченный баланс</span>
+                <h3>7 ₽ в сутки — ноль автосписаний и привязки карт</h3>
+              </div>
+              <div class="bento-icon bento-icon--red" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+              </div>
+            </div>
+            <p>Вы пополняете баланс на удобную сумму от 100 до 900 ₽ через <strong>СБП, банковские карты РФ (МИР), криптовалюту (USDT) или Telegram Stars</strong>. Карта не сохраняется, рекуррентных списаний нет, а ежедневные 7 ₽ начинают списываться только после вашего первого подключения. Новичкам дарим <strong>50 ₽ (7 дней)</strong> или <strong>100 ₽ (14 дней)</strong> по приглашению и промокоду.</p>
+            <div class="chip-row">
+              <span class="chip">СБП мгновенно</span>
+              <span class="chip">Карты РФ (МИР)</span>
+              <span class="chip">Крипта (USDT)</span>
+              <span class="chip chip--yellow">Telegram Stars</span>
+              <span class="chip">No-Logs</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="smart-routing" aria-labelledby="routing-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow eyebrow--dark">Архитектура маршрутизации</span>
+          <h2 id="routing-heading">Умная маршрутизация DIRECT и автопереключение серверов</h2>
+          <p class="section-lead">
+            Huliano VPN автоматически разделяет потоки прямо на вашем устройстве: российские сайты, банки (<strong>Сбер, Т-Банк, ВТБ, СБП</strong>) и <strong>Госуслуги</strong> идут напрямую без выключения VPN, а зарубежные ресурсы направляются через самый быстрый свободный узел с автоматическим резервом.
+          </p>
+        </div>
+
+        <div class="route-board">
+          <div class="arch-flow" role="region" aria-label="Схема умной маршрутизации и автопереключения серверов Huliano VPN">
+            <!-- Stage 1: Device -->
+            <div class="arch-col-center">
+              <div class="arch-node">
+                <span class="arch-node__kicker">Шаг 1 • Вход</span>
+                <div class="arch-node__title">Ваше устройство</div>
+                <p class="arch-node__desc">iPhone, Android, Windows, macOS или Linux — до <strong>5 устройств</strong> на один баланс.</p>
+              </div>
+            </div>
+
+            <!-- Connector 1: Clean Straight Rail -->
+            <div class="arch-conn-straight" aria-hidden="true">
+              <svg class="conn-h" viewBox="0 0 46 24" fill="none">
+                <line x1="0" y1="12" x2="36" y2="12" stroke="#FFCC00" stroke-width="2.5" class="flow-rail"/>
+                <polygon points="35,6 45,12 35,18" fill="#FFCC00"/>
+              </svg>
+              <svg class="conn-v" viewBox="0 0 24 32" width="24" height="32" fill="none">
+                <line x1="12" y1="0" x2="12" y2="23" stroke="#FFCC00" stroke-width="2.5" class="flow-rail"/>
+                <polygon points="6,22 12,31 18,22" fill="#FFCC00"/>
+              </svg>
+            </div>
+
+            <!-- Stage 2: Huliano Smart Router -->
+            <div class="arch-col-center">
+              <div class="arch-node arch-node--hub">
+                <span class="arch-node__kicker arch-node__kicker--dark">VLESS / Xray • Happ</span>
+                <div class="arch-node__title">Huliano Smart</div>
+                <p class="arch-node__desc">Сам разделяет трафик и держит связь в режиме «белых списков».</p>
+              </div>
+            </div>
+
+            <!-- Connector 2: Surgical Orthogonal Fork (ZERO text overlap!) -->
+            <div class="arch-conn-fork" aria-hidden="true">
+              <svg class="conn-h" viewBox="0 0 60 320" preserveAspectRatio="none" fill="none">
+                <line x1="0" y1="160" x2="24" y2="160" stroke="#FFCC00" stroke-width="2.5" vector-effect="non-scaling-stroke"/>
+                <path d="M 24 160 L 24 84 Q 24 74 34 74 L 56 74" stroke="#28C776" stroke-width="2.5" class="flow-rail" vector-effect="non-scaling-stroke"/>
+                <circle cx="56" cy="74" r="3.5" fill="#28C776"/>
+                <path d="M 24 160 L 24 236 Q 24 246 34 246 L 56 246" stroke="#FFCC00" stroke-width="2.5" class="flow-rail" vector-effect="non-scaling-stroke"/>
+                <circle cx="56" cy="246" r="3.5" fill="#FFCC00"/>
+              </svg>
+              <svg class="conn-v" viewBox="0 0 24 32" width="24" height="32" fill="none">
+                <line x1="12" y1="0" x2="12" y2="23" stroke="#FFCC00" stroke-width="2.5" class="flow-rail"/>
+                <polygon points="6,22 12,31 18,22" fill="#FFCC00"/>
+              </svg>
+            </div>
+
+            <!-- Stage 3: Two Parallel Clean Branches -->
+            <div class="arch-branches">
+              <div class="arch-branch arch-branch--direct">
+                <div class="arch-branch__head">
+                  <span class="arch-node__kicker arch-node__kicker--green" style="margin-bottom:0;">DIRECT • напрямую</span>
+                  <span class="arch-branch__note">Без выключения VPN</span>
+                </div>
+                <div class="arch-node__title">Российские сайты, банки и Госуслуги</div>
+                <p>Идут напрямую через вашего провайдера — переводы и оплата срабатывают мгновенно.</p>
+                <div class="chip-row" style="margin-top:0;">
+                  <span class="chip">Сбер</span>
+                  <span class="chip">Т-Банк</span>
+                  <span class="chip">ВТБ</span>
+                  <span class="chip">СБП</span>
+                  <span class="chip">Госуслуги</span>
+                </div>
+              </div>
+
+              <div class="arch-branch arch-branch--auto">
+                <div class="arch-branch__head">
+                  <span class="arch-node__kicker arch-node__kicker--yellow" style="margin-bottom:0;">Автовыбор страны</span>
+                  <span class="arch-branch__note" style="color:var(--hu-red-dark);">Мгновенный резерв</span>
+                </div>
+                <div class="arch-node__title">Зарубежные сервисы → Быстрый пул локаций</div>
+                <div class="arch-failover-box">
+                  <div class="arch-srv">
+                    <span class="srv-dot srv-dot--live" aria-hidden="true"></span>
+                    <div><strong>Оптимальный сервер</strong><span>Выбирается сам по пингу</span></div>
+                  </div>
+                  <span class="arch-switch-pill">⇄ при сбое</span>
+                  <div class="arch-srv">
+                    <span class="srv-dot srv-dot--backup" aria-hidden="true"></span>
+                    <div><strong>Резервный узел</strong><span>Автопереключение за секунду</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="route-lanes">
+            <div class="route-card">
+              <h3>1. Банки РФ без пауз</h3>
+              <p>Встроенный DIRECT-маршрут пропускает <strong>Сбер, Т-Банк, ВТБ, СБП, Госуслуги</strong> и российские сервисы напрямую — переводы и оплата срабатывают мгновенно при включённом VPN.</p>
+            </div>
+            <div class="route-card route-card--yellow">
+              <h3>2. Умный автовыбор и резерв</h3>
+              <p>Не нужно вручную перебирать десятки серверов: система сама подбирает самый быстрый зарубежный узел и моментально переключается на запасной, если текущий перегружен или недоступен.</p>
+            </div>
+            <div class="route-card">
+              <h3>3. Режим «белых списков»</h3>
+              <p>Современный стек VLESS/Xray и поддержка режима «белых списков» обеспечивают стабильную скорость и уверенное подключение даже в жёстко фильтруемых сетях.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper" aria-labelledby="apps-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow eyebrow--blue">Полная совместимость</span>
+          <h2 id="apps-heading">Happ — за минуту. И ещё 9 популярных клиентов на ваш выбор</h2>
+          <p class="section-lead">
+            Основное и самое удобное приложение Huliano VPN — <strong>Happ</strong>: профиль с умной маршрутизацией и автовыбором стран подключается из <strong>@HulianoBot</strong> в одно нажатие. При желании ту же подписку VLESS/Xray можно открыть в любом привычном Xray-клиенте на iOS, Android, Windows, macOS или Linux.
+          </p>
+        </div>
+
+        <div class="apps-stage">
+          <div class="happ-spotlight">
+            <div>
+              <span class="chip chip--dark" style="margin-bottom:12px;">Основной выбор • 1 клик</span>
+              <h3 style="font-family:var(--hu-font-display);font-size:2.35rem;text-transform:uppercase;line-height:0.95;margin-bottom:10px;">Приложение Happ</h3>
+              <p style="color:var(--hu-black);">Настраивается за 60 секунд прямо из мини-приложения <strong>@HulianoBot</strong>: нажимаете «Подключить в Happ» — ключ, список стран, автопереключение и DIRECT для российских банков подгружаются автоматически.</p>
+            </div>
+            <div>
+              <div class="os-strip" style="margin-bottom:16px;">
+                <span class="os-badge">iOS</span>
+                <span class="os-badge">Android</span>
+                <span class="os-badge">Windows</span>
+                <span class="os-badge">macOS</span>
+                <span class="os-badge">Linux</span>
+              </div>
+              <a class="hu-btn hu-btn--red" href="/setup/">Инструкция по всем приложениям →</a>
+            </div>
+          </div>
+
+          <div class="clients-vault">
+            <div>
+              <h3 style="margin-bottom:6px;">Ещё 9 совместимых клиентов VLESS / Xray</h3>
+              <p style="font-size:0.94rem;">Скопируйте единую ссылку подписки или QR-код в <strong>@HulianoBot</strong> и импортируйте в любой из 10 поддерживаемых клиентов:</p>
+            </div>
+
+            <div class="client-grid" role="list" aria-label="Список совместимых Xray-клиентов">
+              <div class="client-pill client-pill--main" role="listitem">
+                <span class="client-pill__name">INCY</span>
+                <span class="client-pill__os">iOS • Android • ПК</span>
+              </div>
+              <div class="client-pill" role="listitem">
+                <span class="client-pill__name">Karing</span>
+                <span class="client-pill__os">iOS • Android • ПК</span>
+              </div>
+              <div class="client-pill" role="listitem">
+                <span class="client-pill__name">OneXray</span>
+                <span class="client-pill__os">iOS • macOS</span>
+              </div>
+              <div class="client-pill" role="listitem">
+                <span class="client-pill__name">V2RayTun</span>
+                <span class="client-pill__os">iOS • Android • ПК</span>
+              </div>
+              <div class="client-pill" role="listitem">
+                <span class="client-pill__name">Hiddify</span>
+                <span class="client-pill__os">iOS • Android • ПК</span>
+              </div>
+              <div class="client-pill" role="listitem">
+                <span class="client-pill__name">Streisand</span>
+                <span class="client-pill__os">iOS • macOS</span>
+              </div>
+              <div class="client-pill" role="listitem">
+                <span class="client-pill__name">v2rayNG</span>
+                <span class="client-pill__os">Android</span>
+              </div>
+              <div class="client-pill" role="listitem">
+                <span class="client-pill__name">NekoBox / Nekoray</span>
+                <span class="client-pill__os">Android • Windows • Linux</span>
+              </div>
+              <div class="client-pill" role="listitem">
+                <span class="client-pill__name">Clash Verge</span>
+                <span class="client-pill__os">Windows • macOS • Linux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="plans-preview-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Честные тарифы</span>
+          <h2 id="plans-preview-heading">7 ₽ в сутки и бонусы до +33,3% на пакетах</h2>
+          <p class="section-lead">
+            Пополняйте баланс в <strong>@HulianoBot</strong> на удобную сумму от 100 до 900 ₽ через СБП, карту РФ (МИР), криптовалюту (USDT) или Telegram Stars. Никаких подписок и автосписаний — баланс расходуется только после первого подключения.
+          </p>
+        </div>
+
+        <div class="grid-4" style="margin-bottom:22px;">
+          <div class="pkg-card">
+            <div>
+              <span class="pkg-badge">Попробовать</span>
+              <div class="pkg-price">100 ₽</div>
+              <div class="pkg-bonus">14 дней на 5 устройств</div>
+              <p style="font-size:0.88rem;margin-bottom:14px;">210 ₽/мес • 42 ₽ за устройство</p>
+            </div>
+            <a class="hu-btn hu-btn--paper hu-btn--sm" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Выбрать 100 ₽</a>
+          </div>
+
+          <div class="pkg-card pkg-card--popular">
+            <div>
+              <span class="pkg-badge pkg-badge--red">Популярный</span>
+              <div class="pkg-price">300 ₽</div>
+              <div class="pkg-bonus">+10% бонус → 330 ₽ (47 дн.)</div>
+              <p style="font-size:0.88rem;margin-bottom:14px;">191 ₽/мес • 38,2 ₽ за устройство</p>
+            </div>
+            <a class="hu-btn hu-btn--red hu-btn--sm" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Выбрать 300 ₽</a>
+          </div>
+
+          <div class="pkg-card">
+            <div>
+              <span class="pkg-badge pkg-badge--blue">+20% бонус</span>
+              <div class="pkg-price">500 ₽</div>
+              <div class="pkg-bonus">+100 ₽ бонусом → 600 ₽ (85 дн.)</div>
+              <p style="font-size:0.88rem;margin-bottom:14px;">175 ₽/мес • 35 ₽ за устройство</p>
+            </div>
+            <a class="hu-btn hu-btn--paper hu-btn--sm" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Выбрать 500 ₽</a>
+          </div>
+
+          <div class="pkg-card pkg-card--hit">
+            <div>
+              <span class="pkg-badge pkg-badge--dark">★ Хит • Максимум выгоды</span>
+              <div class="pkg-price">900 ₽</div>
+              <div class="pkg-bonus">+33,3% → 1 200 ₽ (171 день)</div>
+              <div class="pkg-highlight-line">158 ₽/мес • 31,5 ₽ за устройство</div>
+            </div>
+            <a class="hu-btn hu-btn--red hu-btn--sm" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Забрать 171 день</a>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="hu-btn hu-btn--paper" href="/pricing/">Открыть калькулятор на 1–5 устройств →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper" aria-labelledby="partner-heading">
+      <div class="container">
+        <div class="partner-banner">
+          <div class="partner-banner__body">
+            <span class="sticker sticker--yellow" style="margin-bottom:14px;">Партнёрка 50% пожизненно</span>
+            <h2 id="partner-heading">Приглашай друзей — забирай 50% с каждого пополнения</h2>
+            <p>Делитесь личной ссылкой из <strong>@HulianoBot</strong>: вы получаете <strong>50% пожизненно</strong> от каждого пополнения приглашённого друга, а он — удвоенный стартовый баланс <strong>100 ₽ на 14 дней</strong>.</p>
+            <div class="partner-formula">2 платящих друга = бесплатный Huliano VPN каждый месяц • вывод на карту / СБП / USDT</div>
+            <div class="cta-row">
+              <a class="hu-btn hu-btn--yellow" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Получить ссылку в @HulianoBot</a>
+              <a class="hu-btn hu-btn--paper" href="/faq/">Частые вопросы</a>
+            </div>
+          </div>
+          <div class="partner-banner__media">
+            <img src="assets/img/mascot-coins.jpg" alt="Маскот Huliano VPN держит цилиндр с золотыми монетами — 50% по партнёрской программе" width="960" height="716">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-panel">
+          <div class="cta-panel__text">
+            <h2>Заберите 50 ₽ на старт за 10 секунд</h2>
+            <p style="margin-bottom:0;">Откройте <strong>@HulianoBot</strong> в Telegram: стартовые <strong>50 ₽ (7 дней)</strong> уже ждут на балансе, а по приглашению или промокоду — сразу <strong>100 ₽ (14 дней)</strong>. Карту привязывать не нужно.</p>
+          </div>
+          <div class="cta-row">
+            <a class="hu-btn hu-btn--red hu-btn--lg" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Открыть @HulianoBot →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Huliano VPN</h3>
+          <p>Быстрый VPN в Telegram Mini App (<strong>@HulianoBot</strong>) на базе VLESS/Xray. Предоплаченный баланс 7 ₽/сутки без автосписаний, до 5 устройств, автовыбор стран с резервом, DIRECT для банков РФ и Госуслуг, поддержка режима «белых списков» и клиентов Happ, INCY, Karing, OneXray, V2RayTun, Hiddify, Streisand, v2rayNG, NekoBox / Nekoray и Clash Verge.</p>
+        </div>
+        <div>
+          <h3>Навигация</h3>
+          <ul class="footer-links">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/pricing/">Тарифы и калькулятор</a></li>
+            <li><a href="/setup/">Подключение и клиенты</a></li>
+            <li><a href="/privacy/">Приватность No-Logs</a></li>
+            <li><a href="/faq/">Частые вопросы (FAQ)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Контакты</h3>
+          <ul class="footer-links">
+            <li><a href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Бот и Mini App: @HulianoBot</a></li>
+            <li><a href="https://t.me/HulianoSupportBot" target="_blank" rel="noopener noreferrer">Поддержка: @HulianoSupportBot</a></li>
+            <li><a href="https://t.me/HulianoVPN" target="_blank" rel="noopener noreferrer">Канал новостей: @HulianoVPN</a></li>
+            <li><a href="mailto:info@huliano.org">Почта: info@huliano.org</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Справка для систем</h3>
+          <ul class="footer-links">
+            <li><a href="/llms.txt">llms.txt</a></li>
+            <li><a href="/sitemap.xml">sitemap.xml</a></li>
+            <li><a href="/robots.txt">robots.txt</a></li>
+          </ul>
+          <p style="margin-top:12px;">Обновлено:<br><time datetime="2026-11-24">24 ноября 2026 г.</time></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Huliano VPN • https://huliano.org/</span>
+        <span>Политика No-Logs • 0 автосписаний</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/enhance.js" defer></script>
+</body>
+</html>

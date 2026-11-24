@@ -1,0 +1,77 @@
+name: Notify IndexNow (Bing & Yandex)
+
+on:
+  page_build:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+  workflow_dispatch:
+
+concurrency:
+  group: indexnow-notify
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  submit-indexnow:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'page_build' ||
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for GitHub Pages edge propagation
+        run: sleep 15
+
+      - name: Verify IndexNow key file is live
+        run: |
+          KEY="7a4f9c2e81b64d0fa3e5c918b2d746e1"
+          BODY=$(curl -fsSL "https://huliano.org/${KEY}.txt" | tr -d '[:space:]')
+          if [ "$BODY" != "$KEY" ]; then
+            echo "Key verification mismatch: got '$BODY'"
+            exit 1
+          fi
+          echo "IndexNow key verified on https://huliano.org/${KEY}.txt"
+
+      - name: Submit all 5 URLs to api.indexnow.org and yandex.com/indexnow
+        run: |
+          PAYLOAD='{
+            "host": "huliano.org",
+            "key": "7a4f9c2e81b64d0fa3e5c918b2d746e1",
+            "keyLocation": "https://huliano.org/7a4f9c2e81b64d0fa3e5c918b2d746e1.txt",
+            "urlList": [
+              "https://huliano.org/",
+              "https://huliano.org/pricing/",
+              "https://huliano.org/privacy/",
+              "https://huliano.org/setup/",
+              "https://huliano.org/faq/"
+            ]
+          }'
+
+          echo "Submitting to api.indexnow.org..."
+          CODE_MAIN=$(curl -sS -o /tmp/indexnow_main.txt -w "%{http_code}" \
+            -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "$PAYLOAD")
+          echo "api.indexnow.org HTTP $CODE_MAIN"
+          cat /tmp/indexnow_main.txt || true
+
+          echo "Submitting to yandex.com/indexnow..."
+          CODE_YA=$(curl -sS -o /tmp/indexnow_ya.txt -w "%{http_code}" \
+            -X POST "https://yandex.com/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "$PAYLOAD")
+          echo "yandex.com/indexnow HTTP $CODE_YA"
+          cat /tmp/indexnow_ya.txt || true
+
+          if [ "$CODE_MAIN" != "200" ] && [ "$CODE_MAIN" != "202" ]; then
+            echo "api.indexnow.org failed with HTTP $CODE_MAIN"
+            exit 1
+          fi
+          if [ "$CODE_YA" != "200" ] && [ "$CODE_YA" != "202" ]; then
+            echo "yandex.com/indexnow failed with HTTP $CODE_YA"
+            exit 1
+          fi
+          echo "IndexNow notifications accepted by both api.indexnow.org and yandex.com."

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подключение Huliano VPN: Happ, INCY, Karing и DIRECT</title>
+  <meta name="description" content="Быстрое подключение Huliano VPN из @HulianoBot за минуту: Happ, INCY, Karing, OneXray, V2RayTun, Hiddify, Streisand, v2rayNG, NekoBox, Clash Verge и DIRECT.">
+  <meta name="theme-color" content="#FFCC00">
+  <link rel="canonical" href="https://huliano.org/setup/">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preload" href="../assets/fonts/sofia-800-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/onest-400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/onest-700-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Huliano VPN">
+  <meta property="og:title" content="Подключение Huliano VPN: Happ, INCY, Karing и DIRECT">
+  <meta property="og:description" content="Настройка Huliano VPN за минуту на iOS, Android, Windows, macOS и Linux: основное приложение Happ и полная совместимость с 9 Xray-клиентами, включая INCY.">
+  <meta property="og:url" content="https://huliano.org/setup/">
+  <meta property="og:image" content="https://huliano.org/assets/img/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://huliano.org/#organization",
+        "name": "Huliano VPN",
+        "url": "https://huliano.org/",
+        "logo": "https://huliano.org/assets/img/icon-192.png",
+        "email": "info@huliano.org"
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://huliano.org/setup/#article",
+        "headline": "Подключение Huliano VPN на iOS, Android, Windows, macOS и Linux",
+        "url": "https://huliano.org/setup/",
+        "inLanguage": "ru-RU",
+        "datePublished": "2026-11-24",
+        "dateModified": "2026-11-24",
+        "author": { "@id": "https://huliano.org/#organization" },
+        "publisher": { "@id": "https://huliano.org/#organization" },
+        "description": "Пошаговое подключение Huliano VPN (@HulianoBot) за минуту: основное приложение Happ и совместимые VLESS/Xray клиенты INCY, Karing, OneXray, V2RayTun, Hiddify, Streisand, v2rayNG, NekoBox / Nekoray и Clash Verge. Умная маршрутизация DIRECT, автопереключение стран и поддержка режима белых списков."
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://huliano.org/setup/#howto",
+        "name": "Как подключить Huliano VPN за минуту через @HulianoBot и Happ",
+        "description": "Три простых шага для запуска Huliano VPN на 5 устройствах с автовыбором стран, DIRECT для банков РФ и поддержкой режима белых списков.",
+        "totalTime": "PT1M",
+        "supply": [
+          { "@type": "HowToSupply", "name": "Telegram Mini App @HulianoBot" },
+          { "@type": "HowToSupply", "name": "Приложение Happ или любой совместимый клиент VLESS/Xray (INCY, Karing, OneXray, V2RayTun, Hiddify, Streisand, v2rayNG, NekoBox / Nekoray, Clash Verge)" }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Откройте @HulianoBot в Telegram",
+            "text": "Запустите мини-приложение @HulianoBot: новый аккаунт сразу получает 50 ₽ на 7 дней (или 100 ₽ на 14 дней по приглашению и промокоду). Списание 7 ₽/сутки начнётся только после первого подключения.",
+            "url": "https://huliano.org/setup/#step-1"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Установите Happ или любимый Xray-клиент",
+            "text": "Основное и самое удобное приложение — Happ (настройка в один клик из @HulianoBot; для iPhone скачивайте официальную сборку через happ.su). Также подписка VLESS/Xray полностью поддерживается в INCY, Karing, OneXray, V2RayTun, Hiddify, Streisand, v2rayNG, NekoBox / Nekoray и Clash Verge.",
+            "url": "https://huliano.org/setup/#step-2"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Добавьте ключ в один клик и пользуйтесь",
+            "text": "Нажмите «Подключить устройство» → «Подключить в Happ» (либо скопируйте ссылку подписки / отсканируйте QR-код). Профиль с автовыбором стран, резервным переключением, DIRECT для банков РФ и режимом белых списков готов к работе сразу на 5 устройствах.",
+            "url": "https://huliano.org/setup/#step-3"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://huliano.org/setup/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Главная",
+            "item": "https://huliano.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Подключение и приложения",
+            "item": "https://huliano.org/setup/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="/" aria-label="Huliano VPN — на главную">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="34" height="34">
+            <path d="M 27.6 28.8 C 26.2 21.8, 30.8 17.4, 38.4 17.8 C 44.8 18.1, 49.0 16.5, 49.8 13.0 C 50.5 9.8, 48.0 7.7, 44.6 6.8 C 53.6 6.5, 59.8 14.0, 58.2 23.8 C 56.6 33.4, 46.8 40.2, 34.2 35.4 C 39.0 48.0, 32.2 57.8, 22.6 59.4 C 12.8 61.0, 5.3 54.8, 5.6 45.8 C 6.5 49.2, 8.6 51.7, 11.8 51.0 C 15.3 50.2, 16.9 46.0, 16.6 39.6 C 16.2 32.0, 20.6 27.4, 27.6 28.8 Z" fill="#FFCC00"/>
+          </svg>
+        </span>
+        <span class="brand-name">Huliano VPN</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Основная навигация">
+        <a class="nav-link" href="/">Главная</a>
+        <a class="nav-link" href="/pricing/">Тарифы</a>
+        <a class="nav-link" href="/setup/" aria-current="page">Подключение</a>
+        <a class="nav-link" href="/privacy/">No-Logs</a>
+        <a class="nav-link" href="/faq/">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="hu-btn hu-btn--red hu-btn--sm" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer"><span class="hide-xs">Открыть </span>@HulianoBot</a>
+        <details class="nav-mobile">
+          <summary aria-label="Открыть меню навигации">Меню</summary>
+          <nav class="nav-mobile-panel" aria-label="Мобильная навигация">
+            <a class="nav-link" href="/">Главная</a>
+            <a class="nav-link" href="/pricing/">Тарифы и калькулятор</a>
+            <a class="nav-link" href="/setup/" aria-current="page">Приложения и подключение</a>
+            <a class="nav-link" href="/privacy/">Приватность No-Logs</a>
+            <a class="nav-link" href="/faq/">Частые вопросы</a>
+            <a class="hu-btn hu-btn--red hu-btn--sm" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Перейти в @HulianoBot</a>
+          </nav>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-sub hero-sub--blue" aria-labelledby="setup-h1">
+      <div class="container">
+        <div class="breadcrumb-row">
+          <nav aria-label="Хлебные крошки">
+            <ol class="breadcrumbs">
+              <li><a href="/">Главная</a> /</li>
+              <li aria-current="page"><strong>Подключение и приложения</strong></li>
+            </ol>
+          </nav>
+          <span class="sticker sticker--yellow">Настройка за 60 секунд</span>
+        </div>
+
+        <div class="hero-grid hero-grid--sub">
+          <div>
+            <h1 id="setup-h1" class="h1-sub">Подключение на все устройства — в один клик</h1>
+            <p class="hero-copy">
+              Запустите <strong>Huliano VPN</strong> в <a href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer" style="color:#FFCC00;font-weight:700;">@HulianoBot</a>: основное и самое удобное приложение <strong>Happ</strong> настраивается автоматически в одно касание. При этом стандарт <strong>VLESS/Xray</strong> полноценно работает во всех популярных клиентах — <strong>INCY, Karing, OneXray, V2RayTun, Hiddify, Streisand, v2rayNG, NekoBox / Nekoray и Clash Verge</strong>.
+            </p>
+            <div class="cta-row">
+              <a class="hu-btn hu-btn--yellow hu-btn--lg" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Получить ключ в @HulianoBot</a>
+              <a class="hu-btn hu-btn--paper hu-btn--lg" href="#platforms">Выбрать свою ОС</a>
+            </div>
+          </div>
+
+          <div class="hero-showcase">
+            <figure class="mascot-frame mascot-frame--cream" style="margin:0;">
+              <img src="../assets/img/mascot-setup.jpg" alt="Маскот Huliano VPN со смартфоном, ноутбуком и планшетом — подключение 5 устройств" width="960" height="716" fetchpriority="high">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="steps-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Быстрый старт</span>
+          <h2 id="steps-heading">3 шага до быстрого и стабильного соединения</h2>
+          <p class="section-lead">
+            В Huliano VPN не нужно разбираться в серверах и ручных конфигах: ключ на <strong>до 5 устройств</strong> выдаётся сразу в Telegram Mini App, а ежедневные <strong>7 ₽</strong> начинают списываться только после первого фактического подключения.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="step-card" id="step-1">
+            <span class="step-num">1</span>
+            <h3>Откройте @HulianoBot</h3>
+            <p>Запустите Telegram Mini App <a href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">@HulianoBot</a>. На старте сразу доступно <strong>50 ₽ (7 дней)</strong>, а по приглашению друга или промокоду — <strong>100 ₽ (14 дней)</strong> без привязки карты.</p>
+          </article>
+
+          <article class="step-card" id="step-2">
+            <span class="step-num">2</span>
+            <h3>Установите Happ или свой клиент</h3>
+            <p>Скачайте основное приложение <strong>Happ</strong> (подходит для iOS, Android, Windows, macOS и Linux) либо откройте любой привычный VLESS/Xray клиент из списка ниже.</p>
+          </article>
+
+          <article class="step-card" id="step-3">
+            <span class="step-num">3</span>
+            <h3>Нажмите «Подключить»</h3>
+            <p>Выберите в боте <strong>«Подключить устройство» → «Подключить в Happ»</strong> (или скопируйте ссылку / QR-код для другого устройства). Автовыбор страны, резерв и DIRECT для банков РФ включатся сразу.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper" id="platforms" aria-labelledby="platforms-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow eyebrow--blue">Платформы и приложения</span>
+          <h2 id="platforms-heading">Работает на iPhone, Android, Windows, macOS и Linux</h2>
+          <p class="section-lead">
+            Основное приложение Huliano VPN — <strong>Happ</strong>, оно быстрее всего добавляет подписку из <strong>@HulianoBot</strong>. Если вы привыкли к другому клиенту VLESS/Xray, просто вставьте ссылку подписки из бота в любое из 10 совместимых приложений.
+          </p>
+        </div>
+
+        <div class="platform-grid">
+          <article class="platform-card platform-card--featured platform-card--wide">
+            <div class="platform-head">
+              <h3>iOS (iPhone и iPad)</h3>
+              <span class="sticker sticker--dark">Основной: Happ</span>
+            </div>
+            <p>Для iPhone устанавливайте официальный клиент <strong>Happ</strong> через портал разработчика <a href="https://www.happ.su/main/ru" target="_blank" rel="noopener noreferrer">happ.su</a> (ветка App Store Global или TestFlight — скачивайте именно оригинальный Happ, минуя сторонние клоны). Также на iOS полностью поддерживаются клиенты VLESS/Xray: <strong>INCY</strong>, <strong>Karing</strong>, <strong>OneXray</strong>, <strong>V2RayTun</strong>, <strong>Hiddify</strong> и <strong>Streisand</strong> — импорт ключа из @HulianoBot занимает секунды.</p>
+            <div class="chip-row">
+              <span class="chip chip--yellow">Happ</span>
+              <span class="chip">INCY</span>
+              <span class="chip">Karing</span>
+              <span class="chip">OneXray</span>
+              <span class="chip">V2RayTun</span>
+              <span class="chip">Hiddify</span>
+              <span class="chip">Streisand</span>
+            </div>
+          </article>
+
+          <article class="platform-card">
+            <div class="platform-head">
+              <h3>Android</h3>
+              <span class="sticker sticker--green">1 клик</span>
+            </div>
+            <p>Скачайте <strong>Happ</strong> в Google Play или на <a href="https://www.happ.su/main/ru" target="_blank" rel="noopener noreferrer">happ.su</a> и нажмите «Подключить в Happ» в @HulianoBot. Также отлично подходят <strong>INCY</strong>, <strong>v2rayNG</strong>, <strong>Karing</strong>, <strong>V2RayTun</strong>, <strong>Hiddify</strong> и <strong>NekoBox</strong>.</p>
+            <div class="chip-row">
+              <span class="chip chip--yellow">Happ</span>
+              <span class="chip">INCY</span>
+              <span class="chip">v2rayNG</span>
+              <span class="chip">NekoBox</span>
+              <span class="chip">Karing</span>
+              <span class="chip">V2RayTun</span>
+              <span class="chip">Hiddify</span>
+            </div>
+          </article>
+
+          <article class="platform-card">
+            <div class="platform-head">
+              <h3>Windows</h3>
+              <span class="sticker">ПК и ноутбуки</span>
+            </div>
+            <p>Установите <strong>Happ Desktop</strong> с <a href="https://www.happ.su/main/ru" target="_blank" rel="noopener noreferrer">happ.su</a> и вставьте ссылку подписки из @HulianoBot (или отсканируйте QR). Также поддерживаются <strong>INCY</strong>, <strong>Hiddify</strong>, <strong>Karing</strong>, <strong>V2RayTun</strong>, <strong>NekoBox / Nekoray</strong> и <strong>Clash Verge</strong>.</p>
+            <div class="chip-row">
+              <span class="chip chip--yellow">Happ</span>
+              <span class="chip">INCY</span>
+              <span class="chip">Hiddify</span>
+              <span class="chip">NekoBox / Nekoray</span>
+              <span class="chip">Clash Verge</span>
+              <span class="chip">Karing</span>
+              <span class="chip">V2RayTun</span>
+            </div>
+          </article>
+
+          <article class="platform-card">
+            <div class="platform-head">
+              <h3>macOS</h3>
+              <span class="sticker">Apple Silicon • Intel</span>
+            </div>
+            <p>Поставьте <strong>Happ Desktop</strong>, <strong>INCY</strong>, <strong>OneXray</strong>, <strong>Streisand</strong>, <strong>Karing</strong>, <strong>Hiddify</strong>, <strong>V2RayTun</strong> или <strong>Clash Verge</strong>. Один ключ из @HulianoBot синхронизируется между вашим iPhone и Mac одновременно.</p>
+            <div class="chip-row">
+              <span class="chip chip--yellow">Happ</span>
+              <span class="chip">INCY</span>
+              <span class="chip">OneXray</span>
+              <span class="chip">Streisand</span>
+              <span class="chip">Clash Verge</span>
+              <span class="chip">Karing</span>
+              <span class="chip">Hiddify</span>
+            </div>
+          </article>
+
+          <article class="platform-card">
+            <div class="platform-head">
+              <h3>Linux</h3>
+              <span class="sticker">Десктоп</span>
+            </div>
+            <p>Импортируйте единую ссылку подписки VLESS/Xray в <strong>Happ</strong>, <strong>INCY</strong>, <strong>Clash Verge</strong>, <strong>Hiddify</strong> или <strong>NekoBox / Nekoray</strong> — профиль обновляется автоматически одной кнопкой.</p>
+            <div class="chip-row">
+              <span class="chip chip--yellow">Happ</span>
+              <span class="chip">INCY</span>
+              <span class="chip">Clash Verge</span>
+              <span class="chip">Hiddify</span>
+              <span class="chip">NekoBox / Nekoray</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="direct-routing" aria-labelledby="routing-setup-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow eyebrow--dark">Работает из коробки</span>
+          <h2 id="routing-setup-heading">Автовыбор стран, DIRECT для банков и «белые списки»</h2>
+          <p class="section-lead">
+            Все сетевые сценарии уже заложены в подписку Huliano VPN: после импорта ключа в приложение вы сразу получаете быстрый зарубежный маршрут, прямую работу банков РФ и защиту от сбоев узлов.
+          </p>
+        </div>
+
+        <div class="route-lanes">
+          <article class="route-card">
+            <h3>Российские банки и Госуслуги (DIRECT)</h3>
+            <p><strong>Сбер, Т-Банк, ВТБ, СБП, Госуслуги</strong> и российские сайты открываются напрямую через вашего локального провайдера — ничего не нужно отключать для перевода или оплаты покупки.</p>
+          </article>
+          <article class="route-card route-card--yellow">
+            <h3>Разные страны и автопереключение</h3>
+            <p>Вы можете выбрать нужную локацию вручную или оставить умный авторежим: клиент сам подключит самый быстрый сервер и мгновенно перейдёт на резервный узел, если текущий перестанет отвечать.</p>
+          </article>
+          <article class="route-card">
+            <h3>Режим «белых списков»</h3>
+            <p>Подписка Huliano VPN поддерживает работу в режиме <strong>«белых списков»</strong>, обеспечивая стабильный доступ и ровную скорость даже при жёстких сетевых ограничениях.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-panel">
+          <div class="cta-panel__text">
+            <h2>Подключите до 5 устройств за пару минут</h2>
+            <p style="margin-bottom:0;">Получите ключ в <strong>@HulianoBot</strong> (50 ₽ на 7 дней сразу или 100 ₽ на 14 дней по промокоду). Если понадобится помощь с клиентом — команда поддержки всегда на связи в <a href="https://t.me/HulianoSupportBot" target="_blank" rel="noopener noreferrer"><strong>@HulianoSupportBot</strong></a>.</p>
+          </div>
+          <div class="cta-row">
+            <a class="hu-btn hu-btn--red hu-btn--lg" href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Открыть @HulianoBot →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Huliano VPN</h3>
+          <p>Быстрый VPN в Telegram Mini App (<strong>@HulianoBot</strong>) на базе VLESS/Xray. Предоплаченный баланс 7 ₽/сутки без автосписаний, до 5 устройств, автовыбор стран с резервом, DIRECT для банков РФ и Госуслуг, поддержка режима «белых списков» и клиентов Happ, INCY, Karing, OneXray, V2RayTun, Hiddify, Streisand, v2rayNG, NekoBox / Nekoray и Clash Verge.</p>
+        </div>
+        <div>
+          <h3>Навигация</h3>
+          <ul class="footer-links">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/pricing/">Тарифы и калькулятор</a></li>
+            <li><a href="/setup/">Подключение и клиенты</a></li>
+            <li><a href="/privacy/">Приватность No-Logs</a></li>
+            <li><a href="/faq/">Частые вопросы (FAQ)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Контакты</h3>
+          <ul class="footer-links">
+            <li><a href="https://t.me/HulianoBot" target="_blank" rel="noopener noreferrer">Бот и Mini App: @HulianoBot</a></li>
+            <li><a href="https://t.me/HulianoSupportBot" target="_blank" rel="noopener noreferrer">Поддержка: @HulianoSupportBot</a></li>
+            <li><a href="https://t.me/HulianoVPN" target="_blank" rel="noopener noreferrer">Канал новостей: @HulianoVPN</a></li>
+            <li><a href="mailto:info@huliano.org">Почта: info@huliano.org</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Справка для систем</h3>
+          <ul class="footer-links">
+            <li><a href="/llms.txt">llms.txt</a></li>
+            <li><a href="/sitemap.xml">sitemap.xml</a></li>
+            <li><a href="/robots.txt">robots.txt</a></li>
+          </ul>
+          <p style="margin-top:12px;">Обновлено:<br><time datetime="2026-11-24">24 ноября 2026 г.</time></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Huliano VPN • https://huliano.org/</span>
+        <span>Политика No-Logs • 0 автосписаний</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/enhance.js" defer></script>
+</body>
+</html>
